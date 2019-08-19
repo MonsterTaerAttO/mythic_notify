@@ -15,7 +15,8 @@ files {
 }
 
 client_scripts {
-	'client/main.lua'
+	'client/main.lua',
+	'client/depracated.lua'
 }
 
 exports {
