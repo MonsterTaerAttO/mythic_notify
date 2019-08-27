@@ -22,10 +22,9 @@ client_scripts {
 exports {
 	'SendAlert',
 	'PersistentAlert',
-}
 
---[[ WARNING: These are depracated and may be removed at a future date, Suggest not using it ]]
-exports {
+	
+--[[ WARNING: These are depracated and may be removed at a future date, Suggest not using it ]]--
 	'DoShortHudText',
 	'DoHudText',
 	'DoLongHudText',
