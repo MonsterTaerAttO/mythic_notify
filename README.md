@@ -35,13 +35,15 @@ The custom style is a simple array in key, value format where the key is the CSS
 #### Examples -
 ##### Client:
 ```LUA
-exports['mythic_notify']:SendAlert('inform', 'Hype! Custom Styling!', { ['background-color'] = '#ffffff', ['color'] = '#000000' })
+exports['mythic_notify']:SendAlert('inform', 'Hype! Custom Styling!', 2500, { ['background-color'] = '#ffffff', ['color'] = '#000000' })
 ```
 
 ##### Server:
 ```LUA
-TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'inform', text = 'Hype! Custom Styling!', style = { ['background-color'] = '#ffffff', ['color'] = '#000000' } })
+TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'inform', text = 'Hype! Custom Styling!', length = 2500, style = { ['background-color'] = '#ffffff', ['color'] = '#000000' } })
 ```
+
+> Note: When calling through the event, you can omit the length parameter and the alert will default to 2500 ms or ~2.5 seconds
 
 ##### Result:
 ![Custom Styling](https://i.imgur.com/FClWCqm.png)
