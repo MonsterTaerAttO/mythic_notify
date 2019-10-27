@@ -17,6 +17,15 @@ function SendAlert(type, text, length, style)
 	})
 end
 
+function SendUniqueAlert(id, type, text, length, style)
+	SendNUIMessage({
+		id = id,
+		type = type,
+		text = text,
+		style = style
+	})
+end
+
 function PersistentAlert(action, id, type, text, style)
 	if action:upper() == 'START' then
 		SendNUIMessage({
