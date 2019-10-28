@@ -43,11 +43,13 @@ function ShowNotif(data) {
                 UpdateNotification(data);
             }
         } else if (data.persist.toUpperCase() == 'END') {
-            let $notification = $(notifs[data.id].notif);
-            $.when($notification.fadeOut()).done(function() {
-                $notification.remove();
-                delete notifs[data.id];
-            });
+            if (notifs[data.id] != null) {
+                let $notification = $(notifs[data.id].notif);
+                $.when($notification.fadeOut()).done(function() {
+                    $notification.remove();
+                    delete notifs[data.id];
+                });
+            }
         }
     } else {
         if (data.id != null) {
