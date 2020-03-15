@@ -3,7 +3,7 @@ fx_version 'adamant'
 game 'gta5'
 
 name 'Mythic Framework Notification System Modifier by TaerAttO'
-author 'Alzar - https://github.com/Alzar - https://github.com/MonsterTaerAttO'
+author 'Alzar - https://github.com/Alzar - https://github.com/MonsterTaerAttO/mythic_notify'
 version 'v1.1.0'
 
 ui_page {
